@@ -1,4 +1,11 @@
+:root {
+    --yellow: #ffd602;
+    --red: #d5040a;
+    --blue: #036cb6;
+}
+
 body {
+    font-family: 'Lato', sans-serif;
     height: 100vh;
     margin: 0;
     overflow: hidden;
@@ -12,6 +19,15 @@ body {
 .container {
     position: absolute;
     z-index: 1;
+
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-areas: "nav     aside"
+                         "section aside"
+                         "footer  aside";
+    height: 100%;
+    width: 100%;
 }
 
 .loader {
