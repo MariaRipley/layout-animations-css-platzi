@@ -302,6 +302,12 @@ body {
     place-items: center;
 }
 
+/* .modal__content--xmark {
+    position: absolute;
+    right: 260px;
+    top: 230px;
+} */
+
 .modal__content--slider {
     width: 300px;
     height: 200px;
