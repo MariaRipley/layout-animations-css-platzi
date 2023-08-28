@@ -302,11 +302,9 @@ body {
     place-items: center;
 }
 
-/* .modal__content--xmark {
-    position: absolute;
-    right: 260px;
-    top: 230px;
-} */
+.modal__content--xmark {
+   cursor: pointer;
+}
 
 .modal__content--slider {
     width: 300px;
@@ -334,6 +332,8 @@ body {
     height: 100%;
 }
 
+/* SPIDERMAN SLIDER */
+
 #radio-1:checked ~ .cards #card-1, 
 #radio-2:checked ~ .cards #card-2, 
 #radio-3:checked ~ .cards #card-3
@@ -360,4 +360,63 @@ body {
     opacity: 0.5;
     z-index: 0;
 }
+
+/* ROBIN SLIDER */
+
+#radio-4:checked ~ .cards #card-4, 
+#radio-5:checked ~ .cards #card-5, 
+#radio-6:checked ~ .cards #card-6
+ {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+#radio-4:checked ~ .cards #card-5, 
+#radio-5:checked ~ .cards #card-6, 
+#radio-6:checked ~ .cards #card-4
+ {
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#radio-4:checked ~ .cards #card-6, 
+#radio-5:checked ~ .cards #card-4, 
+#radio-6:checked ~ .cards #card-5
+ {
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+/* BATMAN SLIDER */
+
+#radio-7:checked ~ .cards #card-7, 
+#radio-8:checked ~ .cards #card-8, 
+#radio-9:checked ~ .cards #card-9
+ {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+#radio-7:checked ~ .cards #card-8, 
+#radio-8:checked ~ .cards #card-9, 
+#radio-9:checked ~ .cards #card-7
+ {
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#radio-7:checked ~ .cards #card-9, 
+#radio-8:checked ~ .cards #card-7, 
+#radio-9:checked ~ .cards #card-8
+ {
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.5;
+    z-index: 0;
+}
+
 
